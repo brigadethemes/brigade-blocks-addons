@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compatibility – WordPress, Themes, Plugins and External Services – Brigade Blocks Addons</title>
+<meta name="description" content="Which WordPress and PHP versions, themes, page caches, form plugins and WooCommerce setups Brigade Blocks Addons works with, and which external services some blocks use.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/compatibility.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Compatibility – WordPress, Themes, Plugins and External Services">
+<meta property="og:description" content="Which WordPress and PHP versions, themes, page caches, form plugins and WooCommerce setups Brigade Blocks Addons works with, and which external services some blocks use.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html">Responsive Design</a></li><li><a href="advanced.html">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html" aria-current="page">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Compatibility</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Good to know</p><h1>Compatibility</h1>
+<p class="lead">Brigade Blocks Addons is built on standard WordPress APIs, so it works with block themes, classic themes and the plugins you already use.</p>
+
+</header>
+
+<h2 id="wordpress">WordPress and PHP</h2>
+<ul>
+<li><strong>WordPress 6.5+</strong> (tested up to 7.1) and <strong>PHP 7.4+</strong>.</li>
+<li>Works in the post and page editor, the Site Editor (templates and template parts), widget areas that use blocks, and patterns.</li>
+<li>Not available with the Classic Editor plugin (it disables blocks).</li>
+<li>Single sites and multisite networks.</li>
+</ul>
+
+<h2 id="themes">Themes</h2>
+<ul>
+<li><strong>Block themes</strong> (Twenty Twenty-Five and others): fully supported, including templates — e.g. a Mini Cart in the header or an Author Box in the single-post template.</li>
+<li><strong>Classic themes</strong>: supported in posts and pages.</li>
+<li>Colour and font pickers show your theme’s palette and font sizes first.</li>
+<li>Choose <em>Inherit from theme</em> in <a href="settings.html#block-typography">Block typography</a> to use your theme’s fonts.</li>
+<li>Theme developers can override any <a href="advanced.html#design-tokens">design token</a>.</li>
+</ul>
+
+<h2 id="plugins">Plugins</h2>
+<div class="table-wrap"><table><caption>Plugin integrations</caption><thead><tr><th scope="col">Plugin</th><th scope="col">What works</th></tr></thead><tbody>
+<tr><td>WooCommerce</td><td>The <a href="blocks/index.html#module-woocommerce">WooCommerce module</a> (6 blocks) appears only while WooCommerce is active. Prices, badges, AJAX add to cart and cart fragments use WooCommerce’s own functions.</td></tr>
+<tr><td>Contact Form 7, WPForms (Lite / Pro)</td><td>Styled with the <a href="blocks/form-styler.html">Form Styler</a>.</td></tr>
+<tr><td>Security, login-limit, captcha and two-factor plugins</td><td>The <a href="blocks/login-form.html">Login Form</a> uses WordPress’s standard login functions and hooks, so these keep working; when a plugin needs an extra step, the form falls back to the standard login page.</td></tr>
+<tr><td>Page-cache plugins</td><td>Supported. Blocks that show visitor-specific content (Login Form, User Profile, Mini Cart) rely on the cache skipping logged-in users, which caching plugins do by default.</td></tr>
+<tr><td>Custom post types and fields</td><td>Posts and Dynamic Content work with any public post type and with custom fields (post meta), except hidden fields starting with <code>_</code>.</td></tr>
+<tr><td>Any plugin with shortcodes</td><td>Use the <a href="blocks/shortcode.html">Shortcode</a> block.</td></tr>
+</tbody></table></div>
+
+<h2 id="browsers">Browsers</h2>
+<p>Current versions of Chrome, Edge, Firefox and Safari (desktop and mobile). A few enhancements depend on newer browser features and degrade gracefully: the exclusive “Only one open at a time” accordion and “find in page” for closed tabs and accordions work in current browsers; older browsers simply allow several open items.</p>
+
+<h2 id="external-services">External services</h2>
+<p>Some blocks can show content from third-party services. Nothing is sent to these services unless you add the block to a page.</p>
+<div class="table-wrap"><table><caption>Third-party services used by blocks</caption><thead><tr><th scope="col">Service</th><th scope="col">Blocks</th><th scope="col">When and what</th><th scope="col">Terms / privacy</th></tr></thead><tbody>
+<tr><td>Google Maps</td><td><a href="blocks/google-maps.html">Google Maps</a></td><td>When the map loads, the visitor’s browser requests it from Google, which receives the visitor’s IP address, browser details and the address shown. With “Load map on click”, nothing is requested until the visitor clicks.</td><td><a href="https://policies.google.com/terms" rel="noopener">Terms</a>, <a href="https://maps.google.com/help/terms_maps/" rel="noopener">Maps terms</a>, <a href="https://policies.google.com/privacy" rel="noopener">Privacy</a></td></tr>
+<tr><td>YouTube</td><td><a href="blocks/video.html">Video</a>, <a href="blocks/video-gallery.html">Video Gallery</a></td><td>Without a custom poster, the thumbnail is loaded from i.ytimg.com; after the visitor presses play, the video is embedded from youtube-nocookie.com. YouTube receives the IP address, browser details and video ID.</td><td><a href="https://www.youtube.com/t/terms" rel="noopener">Terms</a>, <a href="https://policies.google.com/privacy" rel="noopener">Privacy</a></td></tr>
+<tr><td>Vimeo</td><td>Video, Video Gallery</td><td>After the visitor presses play, the video is embedded from player.vimeo.com with Do Not Track.</td><td><a href="https://vimeo.com/terms" rel="noopener">Terms</a>, <a href="https://vimeo.com/privacy" rel="noopener">Privacy</a></td></tr>
+<tr><td>Google Sheets or another CSV link</td><td><a href="blocks/chart.html">Chart</a> (only with “From a link”)</td><td>Your <em>server</em> downloads the link you entered and caches it (5 minutes to one day). No visitor data is sent. Private or local network addresses are never contacted.</td><td><a href="https://policies.google.com/terms" rel="noopener">Google Terms</a>, <a href="https://policies.google.com/privacy" rel="noopener">Privacy</a>; for other addresses, the host’s terms apply.</td></tr>
+</tbody></table></div>
+<p>The Urbanist font is bundled and served from your own site — no request to Google Fonts. Mention the services you use in your site’s privacy policy.</p>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="performance.html">Performance</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="advanced.html" rel="prev"><span>Previous</span>Advanced Features</a><a class="pager-next" href="performance.html" rel="next"><span>Next</span>Performance</a></nav>
+</article>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#wordpress">WordPress and PHP</a></li><li><a href="#themes">Themes</a></li><li><a href="#plugins">Plugins</a></li><li><a href="#browsers">Browsers</a></li><li><a href="#external-services">External services</a></li></ol></aside>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>

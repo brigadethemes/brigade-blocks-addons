@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brigade Blocks Addons Settings – Modules, Blocks and Typography Explained – Brigade Blocks Addons</title>
+<meta name="description" content="How to use the Brigade Blocks settings screen: switch modules and individual blocks on or off, choose the block typography and understand the roadmap.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/settings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Brigade Blocks Addons Settings – Modules, Blocks and Typography Explained">
+<meta property="og:description" content="How to use the Brigade Blocks settings screen: switch modules and individual blocks on or off, choose the block typography and understand the roadmap.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html" aria-current="page">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html">Responsive Design</a></li><li><a href="advanced.html">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Plugin Settings</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Start here</p><h1>Plugin Settings</h1>
+<p class="lead">One screen controls which blocks your site loads and which fonts they use. Changes apply to the editor and the front end as soon as you save.</p>
+
+</header>
+
+<h2 id="open-settings">Opening the settings screen</h2>
+<p>In your WordPress dashboard, click <strong>Brigade Blocks</strong> in the admin menu (the grid icon, just above <em>Appearance</em>). You can also click <strong>Settings</strong> under <em>Brigade Blocks Addons</em> on the Plugins screen. Only administrators (users with the <code>manage_options</code> capability) can open it.</p>
+<p>At the top, three numbers summarise your setup: <strong>Active modules</strong>, <strong>Active blocks</strong> and modules <strong>On the roadmap</strong>.</p>
+
+<h2 id="modules">Modules</h2>
+<p>Each module is shown as a card with its name, a description, a switch and the list of its blocks.</p>
+<dl class="control-facts">
+<dt>Module switch</dt><dd>Turns the whole module on or off. <strong>Off</strong> removes all of its blocks from the editor and the front end — no blocks, scripts or styles are registered. Content already saved in your posts is kept and comes back when you switch the module on again.</dd>
+<dt>“N of M blocks on”</dt><dd>How many of the module’s blocks are enabled.</dd>
+<dt>Block chips</dt><dd>One checkbox per block. Untick a block to remove just that block. Hover a chip to read the block’s description. Inner blocks (for example Accordion Item or Tab) have no chip of their own: they follow their parent block.</dd>
+<dt>Enable all / Disable all</dt><dd>Tick or untick every block chip of that module in one click (remember to save).</dd>
+<dt>Requires …</dt><dd>Modules that depend on another plugin say so, e.g. “Requires WooCommerce to be installed and active. Its blocks stay unregistered until then.”</dd>
+<dt>Coming next</dt><dd>Some cards list blocks planned for future releases of that module.</dd>
+<dt>PRO badge</dt><dd>Marks modules and blocks that come with the separate <a href="advanced.html#pro">Brigade Blocks Addons Pro</a> add-on. The badge stays when Pro is active, so you always know which blocks are Pro.</dd>
+</dl>
+
+<h3 id="pro-locked">Pro modules and blocks while Pro is not active</h3>
+<p>Pro modules and blocks are always listed, so you can see what Pro includes. Until Pro is running they are <strong>locked</strong>: the card has a dashed border, the switch and chips are greyed out with a lock, and they cannot be turned on. The card says why and offers one button:</p>
+<ul>
+<li><strong>Get Pro</strong> — Pro is not installed. Opens the Pro product page in a new tab.</li>
+<li><strong>Activate Pro</strong> — Pro is installed but not activated (shown to users who can activate plugins).</li>
+<li><strong>Update Pro</strong> — Pro is active but too old for this version of Brigade Blocks Addons.</li>
+</ul>
+<p>Once Pro is active, its modules and blocks work like any other, with the PRO badge kept. Switches you set for Pro blocks are remembered while Pro is inactive.</p>
+<p>Current modules:</p>
+<ul>
+<li><a href="blocks/index.html#module-content"><strong>Content</strong></a> — 14 blocks: <a href="blocks/container.html">Container</a>, <a href="blocks/heading.html">Heading</a>, <a href="blocks/text-editor.html">Text Editor</a>, <a href="blocks/image.html">Image</a>, <a href="blocks/image-box.html">Image Box</a>, <a href="blocks/icon.html">Icon</a>, <a href="blocks/icon-box.html">Icon Box</a>, <a href="blocks/button.html">Button</a>, <a href="blocks/divider.html">Divider</a>, <a href="blocks/spacer.html">Spacer</a>, <a href="blocks/video.html">Video</a>, <a href="blocks/google-maps.html">Google Maps</a>, <a href="blocks/html.html">HTML</a>, <a href="blocks/shortcode.html">Shortcode</a>.</li>
+<li><a href="blocks/index.html#module-interactive"><strong>Interactive</strong></a> — 6 blocks: <a href="blocks/accordion.html">Accordion</a>, <a href="blocks/tabs.html">Tabs</a>, <a href="blocks/slider.html">Slider</a>, <a href="blocks/toggle.html">Content Toggle</a>, <a href="blocks/timeline.html">Timeline</a>, <a href="blocks/process-steps.html">Process Steps</a>.</li>
+<li><a href="blocks/index.html#module-marketing"><strong>Marketing</strong></a> — 4 blocks: <a href="blocks/call-to-action.html">Call to Action</a>, <a href="blocks/counter.html">Counter</a>, <a href="blocks/flip-box.html">Flip Box</a>, <a href="blocks/progress-bar.html">Progress Bar</a>.</li>
+<li><a href="blocks/index.html#module-posts"><strong>Posts</strong></a> — 3 blocks: <a href="blocks/posts.html">Posts</a>, <a href="blocks/author-box.html">Author Box</a>, <a href="blocks/dynamic-content.html">Dynamic Content</a>.</li>
+<li><a href="blocks/index.html#module-media"><strong>Media</strong></a> — 3 blocks: <a href="blocks/gallery.html">Gallery</a>, <a href="blocks/before-after.html">Before / After</a>, <a href="blocks/video-gallery.html">Video Gallery</a>.</li>
+<li><a href="blocks/index.html#module-woocommerce"><strong>WooCommerce</strong></a> — 6 blocks: <a href="blocks/products.html">Products</a>, <a href="blocks/product-categories.html">Product Categories</a>, <a href="blocks/add-to-cart.html">Add to Cart</a>, <a href="blocks/mini-cart.html">Mini Cart</a>, <a href="blocks/product-search.html">Product Search</a>, <a href="blocks/store-page.html">Store Page</a>.</li>
+<li><a href="blocks/index.html#module-forms"><strong>Forms</strong></a> — 3 blocks: <a href="blocks/form-styler.html">Form Styler</a>, <a href="blocks/login-form.html">Login Form</a>, <a href="blocks/user-profile.html">User Profile</a>.</li>
+<li><a href="blocks/index.html#module-advanced"><strong>Advanced</strong></a> — 2 blocks: <a href="blocks/advanced-search.html">Advanced Search</a>, <a href="blocks/taxonomy-filter.html">Taxonomy Filter</a>.</li>
+<li><a href="blocks/index.html#module-data-visualization"><strong>Data Visualization</strong></a> — 3 blocks: <a href="blocks/chart.html">Chart</a>, <a href="blocks/progress-chart.html">Progress Chart</a>, <a href="blocks/stat-cards.html">Statistics Cards</a>.</li>
+</ul>
+<div class="callout tip"><p><strong>Tip:</strong> switching a module or block off is the best way to keep your site lean — disabled blocks load no CSS or JavaScript at all. It is also safe: nothing in your posts is deleted.</p></div>
+
+<h2 id="what-happens-when-off">What happens when a block is switched off?</h2>
+<ul>
+<li>The block disappears from the inserter.</li>
+<li>Copies already on your pages stop being displayed on the site (blocks that hold other blocks show only their inner content). In the editor they appear as unsupported blocks — leave them as they are if you plan to switch the block on again.</li>
+<li>Switch it back on and everything is displayed exactly as before.</li>
+<li>Blocks added in future plugin updates are switched on automatically; your “off” choices are always kept.</li>
+</ul>
+
+<h2 id="design">Design</h2>
+<p>Blocks use the <strong>Donix</strong> style system: coral accent, ink headings and 6px corners. Themes can override any design token with CSS custom properties (see <a href="advanced.html#design-tokens">Design tokens</a>).</p>
+<h3 id="block-typography">Block typography</h3>
+<dl class="control-facts">
+<dt>Donix — Urbanist <span class="badge">default</span></dt><dd>Loads the bundled Urbanist font from your own server, only on pages that use a block. No request goes to Google Fonts or any other service.</dd>
+<dt>Inherit from theme</dt><dd>Blocks use your theme’s fonts. No font files are loaded. Choose this if your brand uses a different typeface.</dd>
+</dl>
+<p>You can still change the font of any single element in the Styles tab (<a href="styling.html#panel-typography">Typography panel</a>).</p>
+
+<h2 id="roadmap">Roadmap</h2>
+<p>The Roadmap section lists modules that ship in upcoming releases (marked <strong>Planned</strong>). Each arrives as an independent module you can switch on or off. Planned modules have no switch yet.</p>
+
+<h2 id="saving">Saving</h2>
+<p>Click <strong>Save changes</strong> in the bar at the bottom. The page saves without reloading: the button shows <em>Saving…</em>, then <em>Settings saved.</em> appears next to it and the counts at the top update. If saving fails, the message says why (for example an expired session — reload the page and try again). Changes apply to the editor and the front end immediately — reload any open editor tab to see added or removed blocks.</p>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="blocks/index.html">blocks/index.html</a></li><li><a href="performance.html">Performance</a></li><li><a href="installation.html">Installation &amp; Activation</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="installation.html" rel="prev"><span>Previous</span>Installation &amp; Activation</a><a class="pager-next" href="blocks/index.html" rel="next"><span>Next</span>Blocks overview</a></nav>
+</article>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#open-settings">Opening the settings screen</a></li><li><a href="#modules">Modules</a></li><li><a href="#what-happens-when-off">What happens when a block is switched off?</a></li><li><a href="#design">Design</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#saving">Saving</a></li></ol></aside>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>

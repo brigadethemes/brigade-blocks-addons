@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced Features – Anchors, Custom Attributes, Design Tokens and Hooks – Brigade Blocks Addons</title>
+<meta name="description" content="HTML anchors and CSS classes, custom attributes, conditional and per-device content, design tokens for theme developers and every developer hook of Brigade Blocks Addons.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/advanced.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Advanced Features – Anchors, Custom Attributes, Design Tokens and Hooks">
+<meta property="og:description" content="HTML anchors and CSS classes, custom attributes, conditional and per-device content, design tokens for theme developers and every developer hook of Brigade Blocks Addons.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html">Responsive Design</a></li><li><a href="advanced.html" aria-current="page">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Advanced Features</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Design & features</p><h1>Advanced Features</h1>
+<p class="lead">Features that work across blocks: attributes and anchors, showing content per device or visitor, theming with CSS custom properties, and hooks for developers.</p>
+
+</header>
+
+<h2 id="anchors-classes">HTML anchor and CSS classes</h2>
+<p>At the bottom of every block’s <strong>Settings</strong> tab, <strong>Advanced</strong> contains:</p>
+<ul>
+<li><strong>HTML anchor</strong> — a unique name (letters, numbers, hyphens) that becomes the block’s ID. Link to it with <code>#name</code>, e.g. a menu item “Pricing” → <code>/#pricing</code>. On Tab and Toggle Panel blocks the anchor becomes the panel ID, so a link opens that tab directly. (A few inner blocks, such as Process Step, have no anchor.)</li>
+<li><strong>Additional CSS class(es)</strong> — one or more class names, separated by spaces, for your own CSS.</li>
+</ul>
+
+<h2 id="custom-attributes">Custom attributes</h2>
+<p>Blocks with the <em>Custom attributes</em> panel (in <strong>Advanced</strong>) can add HTML attributes to their outer element — for analytics, testing or accessibility.</p>
+<ul>
+<li>Allowed names: <code>data-*</code> (for example <code>data-track="hero-cta"</code>), <code>title</code>, <code>aria-label</code>, <code>aria-describedby</code>, <code>lang</code> and <code>dir</code>.</li>
+<li>Up to 10 attributes per block. <strong>Add attribute</strong> / <strong>Remove attribute</strong> manage the list.</li>
+<li>Anything else (such as <code>onclick</code> or <code>style</code>) is ignored for safety.</li>
+</ul>
+
+<h2 id="layout-features">Layouts, flex items and positioning</h2>
+<p>The <a href="blocks/container.html">Container</a> arranges any blocks in rows, columns or grids with per-device values. Every block placed directly inside it gets a <a href="styling.html#panel-child">Flex item</a> panel (width, grow, shrink, order, align self), and blocks with the <a href="styling.html#panel-position">Position</a> panel can be sticky, absolute or fixed.</p>
+
+<h2 id="conditional">Showing content conditionally</h2>
+<ul>
+<li><a href="styling.html#panel-visibility">Visibility panel</a> — hide any block on desktop, tablet or mobile (CSS only).</li>
+<li><a href="blocks/login-form.html">Login Form</a> and <a href="blocks/user-profile.html">User Profile</a> — different output for logged-in and logged-out visitors.</li>
+</ul>
+
+<p>Rules by role, schedule, URL parameter and more come with <a href="#pro">Conditional Content</a> in Pro.</p>
+
+<h2 id="design-tokens">Design tokens (for theme developers)</h2>
+<p>All blocks use CSS custom properties, so a theme (or <em>Appearance → Editor → Styles → Additional CSS</em>) can restyle every block at once:</p>
+<pre tabindex="0"><code>:root {
+	--wpbb-brand: #0a7cff;
+	--wpbb-radius: 10px;
+}</code></pre>
+<div class="table-wrap"><table><caption>Main design tokens and their default values</caption><thead><tr><th scope="col">Token</th><th scope="col">Default</th><th scope="col">Used for</th></tr></thead><tbody>
+<tr><td><code>--wpbb-ink</code></td><td><code>#232439</code></td><td>Headings, high-emphasis text</td></tr><tr><td><code>--wpbb-ink-alt</code></td><td><code>#2c2d45</code></td><td>Dark panels, icons on mint</td></tr><tr><td><code>--wpbb-body-text</code></td><td><code>#6d7174</code></td><td>Body copy</td></tr><tr><td><code>--wpbb-surface</code></td><td><code>#ffffff</code></td><td>Page and card surface</td></tr><tr><td><code>--wpbb-surface-tint</code></td><td><code>#f2f6f6</code></td><td>Section backgrounds</td></tr><tr><td><code>--wpbb-brand</code></td><td><code>#f26440</code></td><td>Primary actions (the coral accent)</td></tr><tr><td><code>--wpbb-brand-text</code></td><td><code>#c4451f</code></td><td>Brand colour for small text (4.9:1 contrast on white)</td></tr><tr><td><code>--wpbb-brand-tint</code></td><td><code>#fdf3f3</code></td><td>Behind brand icons</td></tr><tr><td><code>--wpbb-accent-mint</code></td><td><code>#c5ebe9</code></td><td>Cool icon-badge accent</td></tr><tr><td><code>--wpbb-border</code></td><td><code>#ebeced</code></td><td>Borders and dividers</td></tr><tr><td><code>--wpbb-overlay</code></td><td><code>rgba(11,18,24,.6)</code></td><td>Scrim over imagery</td></tr><tr><td><code>--wpbb-radius</code></td><td><code>6px</code></td><td>Buttons, cards, inputs</td></tr>
+</tbody></table></div>
+<p>More tokens cover spacing, shadows and containers (<code>--wpbb-container-width</code>, <code>--wpbb-content-size</code>, <code>--wpbb-container-gap</code>, <code>--wpbb-section-padding</code>); see <code>assets/css/tokens.css</code> in the plugin. Values set in a block’s Styles tab always win over tokens.</p>
+
+<h2 id="developer-hooks">Developer hooks</h2>
+<p>For developers extending the plugin (in a child theme or a small plugin):</p>
+<div class="table-wrap"><table><caption>Actions and filters</caption><thead><tr><th scope="col">Hook</th><th scope="col">Type</th><th scope="col">Purpose</th></tr></thead><tbody>
+<tr><td><code>wpbb_loaded</code></td><td>action</td><td>The plugin has booted; receives the plugin container.</td></tr><tr><td><code>wpbb_modules</code></td><td>filter</td><td>Add or change module definitions.</td></tr><tr><td><code>wpbb_is_module_active</code></td><td>filter</td><td>Force a module on or off.</td></tr><tr><td><code>wpbb_is_block_enabled</code></td><td>filter</td><td>Force a block on or off.</td></tr><tr><td><code>wpbb_module_loaded_{slug}</code></td><td>action</td><td>An active module finished loading.</td></tr><tr><td><code>wpbb_icons</code></td><td>filter</td><td>Add icons to the icon library (<code>slug => [label, body]</code>, 24×24 stroke SVG).</td></tr><tr><td><code>wpbb_migrations</code></td><td>filter</td><td><code>version => callable</code> data migrations.</td></tr><tr><td><code>wpbb_upgraded</code></td><td>action</td><td>Runs after migrations.</td></tr><tr><td><code>wpbb_posts_allowed_post_types</code></td><td>filter</td><td>Post types the Posts block may list.</td></tr><tr><td><code>wpbb_posts_query_args</code></td><td>filter</td><td>Final <code>WP_Query</code> arguments of a Posts block.</td></tr><tr><td><code>wpbb_products_query_args</code></td><td>filter</td><td>Final <code>WP_Query</code> arguments of a Products block.</td></tr><tr><td><code>wpbb_advanced_search_query_args</code></td><td>filter</td><td><code>WP_Query</code> arguments of Advanced Search live results.</td></tr><tr><td><code>wpbb_dynamic_content_meta_allowed</code></td><td>filter</td><td>Allow or deny a custom field key for the Dynamic Content block.</td></tr><tr><td><code>wpbb_user_profile_account_url</code></td><td>filter</td><td>The “My account” link of the User Profile block.</td></tr><tr><td><code>wpbb_style_breakpoints</code></td><td>filter</td><td>Change the tablet/mobile breakpoints (px) used by the front end and the editor.</td></tr>
+</tbody></table></div>
+<p><strong>Example</strong> — only list posts from the last 30 days in every Posts block:</p>
+<pre tabindex="0"><code>add_filter( 'wpbb_posts_query_args', function ( $args ) {
+	$args['date_query'] = array( array( 'after' => '30 days ago' ) );
+	return $args;
+} );</code></pre>
+<p>The human-readable source of all compiled scripts is included in the plugin’s <code>src/</code> folder (build with <code>npm install</code> and <code>npm run build</code>).</p>
+
+<h2 id="pro">In Brigade Blocks Addons Pro</h2>
+<p>Brigade Blocks Addons Pro is a separate add-on that needs this plugin. It adds a <strong>Dynamic Data</strong> module:</p>
+<ul>
+<li><strong>Loop Builder</strong> — query any post type by taxonomy, custom field or author, and design each item yourself with blocks.</li>
+<li><strong>Dynamic Tags</strong> — live values such as the post title, a custom field, the current year or the visitor’s name inside any text.</li>
+<li><strong>Conditional Content</strong> — show blocks only to logged-in visitors or certain roles, on a schedule, by URL parameter or device.</li>
+</ul>
+<p>On <a href="settings.html">Settings</a>, Pro modules and blocks carry a <strong>PRO</strong> badge; while Pro is not active they are listed but locked.</p>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="blocks/dynamic-content.html">Dynamic Content block</a></li><li><a href="blocks/container.html">Container block</a></li><li><a href="styling.html">Styling Controls</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="responsive.html" rel="prev"><span>Previous</span>Responsive Design</a><a class="pager-next" href="compatibility.html" rel="next"><span>Next</span>Compatibility</a></nav>
+</article>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#anchors-classes">HTML anchor and CSS classes</a></li><li><a href="#custom-attributes">Custom attributes</a></li><li><a href="#layout-features">Layouts, flex items and positioning</a></li><li><a href="#conditional">Showing content conditionally</a></li><li><a href="#design-tokens">Design tokens (for theme developers)</a></li><li><a href="#developer-hooks">Developer hooks</a></li><li><a href="#pro">In Brigade Blocks Addons Pro</a></li></ol></aside>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>

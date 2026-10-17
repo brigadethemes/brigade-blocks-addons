@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting Brigade Blocks Addons – Common Problems and Solutions – Brigade Blocks Addons</title>
+<meta name="description" content="Solutions for common Brigade Blocks Addons problems: missing blocks, blocks not showing on the site, style changes not visible, scripts, videos, maps, charts and dynamic content.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/troubleshooting.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Troubleshooting Brigade Blocks Addons – Common Problems and Solutions">
+<meta property="og:description" content="Solutions for common Brigade Blocks Addons problems: missing blocks, blocks not showing on the site, style changes not visible, scripts, videos, maps, charts and dynamic content.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html">Responsive Design</a></li><li><a href="advanced.html">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Troubleshooting</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Help</p><h1>Troubleshooting</h1>
+<p class="lead">Most problems have a simple cause. Find your symptom below; each block guide also has its own Troubleshooting section.</p>
+
+</header>
+
+<h2 id="first-steps">First steps for any problem</h2>
+<ol class="steps">
+<li><strong>Clear caches</strong> — your caching plugin, your host’s cache and your browser (or test in a private window).</li>
+<li><strong>Update</strong> WordPress, your theme and your plugins.</li>
+<li><strong>Check the settings</strong> — is the module and block switched on?</li>
+<li><strong>Look for conflicts</strong> — temporarily switch to a default theme (e.g. Twenty Twenty-Five) and deactivate other plugins one by one on a staging site.</li>
+<li><strong>Check the browser console</strong> (F12 → Console) for JavaScript errors.</li>
+</ol>
+<h2 id="install">Installation & setup</h2>
+<details class="qa"><summary>I can’t find Brigade blocks in the inserter.</summary><div><p>Check that the plugin is active (<em>Plugins</em>), then that the module and the block are switched on in <a href="settings.html">Brigade Blocks</a>. Search by the block name, or look in the <strong>Brigade Blocks</strong> category. Inner blocks (Accordion Item, Tab…) only appear while their parent is selected.</p></div></details>
+<details class="qa"><summary>The WooCommerce blocks are missing.</summary><div><p>The WooCommerce module only works while WooCommerce is installed and active. Activate WooCommerce, then check the module switch.</p></div></details>
+<details class="qa"><summary>The settings screen is not in my menu.</summary><div><p>Only administrators (users with the <code>manage_options</code> capability) see the <strong>Brigade Blocks</strong> menu.</p></div></details>
+<h2 id="display">Blocks on the site</h2>
+<details class="qa"><summary>A block appears in the editor but not on the published page.</summary><div><p>Most blocks are hidden when they have no content (empty text, no image, no address, no matching posts). Check the block’s content, then the <strong>Visibility</strong> panel in the Styles tab (it may be hidden on that device). The block’s guide lists the exact conditions under <em>Troubleshooting</em>.</p></div></details>
+<details class="qa"><summary>My blocks disappeared after switching off a module.</summary><div><p>That is expected: disabled blocks are not displayed. Nothing is deleted — switch the module or block on again and they return.</p></div></details>
+<details class="qa"><summary>My style changes don’t show on the site.</summary><div><p>Save/update the page, then clear any page cache (caching plugin, host or CDN) and reload. Also check that you edited the right <strong>Element</strong>, <strong>State</strong> (Normal vs Hover) and <strong>Device</strong> in the Styles tab — a value set on Mobile only applies to phones.</p></div></details>
+<details class="qa"><summary>The fonts look different from the documentation screenshots.</summary><div><p>Check <a href="settings.html#block-typography">Block typography</a>: “Inherit from theme” uses your theme’s fonts. A Font family set in the Styles tab also overrides it.</p></div></details>
+<details class="qa"><summary>Styles from my theme override the blocks.</summary><div><p>Block styles set in the Styles tab are scoped and strong enough to beat block defaults. If your theme uses very specific rules, set the value in the Styles tab rather than relying on defaults, or ask your theme developer to use the <a href="advanced.html#design-tokens">design tokens</a>.</p></div></details>
+<h2 id="interactive">Interactive blocks and scripts</h2>
+<details class="qa"><summary>Tabs, carousels or counters don’t work.</summary><div><p>These use small scripts. Check your browser console for errors from other plugins, and make sure optimisation plugins don’t delay or combine scripts in a way that breaks them — exclude the <code>brigade-blocks-addons</code> scripts from “delay JavaScript” features.</p></div></details>
+<details class="qa"><summary>The video or map doesn’t load.</summary><div><p>With click-to-load on, it loads only after pressing play / “Show map”. Private YouTube videos can’t be embedded. Content-blocking browser extensions may block YouTube, Vimeo or Google Maps.</p></div></details>
+<details class="qa"><summary>The Login Form redirects to wp-login.php.</summary><div><p>A security or two-factor plugin needed an extra step, so the form fell back to the standard login page. That is intentional.</p></div></details>
+<details class="qa"><summary>Posts “Load more” or filters don’t work.</summary><div><p>They use the WordPress REST API. Security plugins that block the REST API for visitors will break them — allow the <code>wpbb/v1</code> routes.</p></div></details>
+<h2 id="data">Data and dynamic content</h2>
+<details class="qa"><summary>My Google Sheet chart shows old or sample data.</summary><div><p>Share the sheet with “Anyone with the link” (or publish it to the web). The chart re-checks after the “Check for new data” interval; until the link can be read it shows the saved data.</p></div></details>
+<details class="qa"><summary>A Dynamic Content block is empty.</summary><div><p>The field is empty for that post, or it is a hidden custom field (starting with <code>_</code>), which is never shown. Add <em>Fallback text</em> to show something instead.</p></div></details>
+<h2 id="editor">In the editor</h2>
+<details class="qa"><summary>I can’t select the Container behind other blocks.</summary><div><p>Select a block inside it, then use the “Select parent” arrow in the toolbar, or open the <em>List View</em>.</p></div></details>
+<details class="qa"><summary>The Styles tab shows fewer panels than described.</summary><div><p>Panels depend on the selected <strong>Element</strong> and <strong>State</strong>: for example background images, radius and visibility exist only in the Normal state, and the Focus indicator only in the Focus state.</p></div></details>
+<details class="qa"><summary>The editor shows “This block contains unexpected or invalid content”.</summary><div><p>This can happen after copying block HTML between sites. Click <em>Attempt recovery</em>. Brigade blocks are rendered on the server, so their saved markup is minimal and recovery usually succeeds.</p></div></details>
+<h2 id="still-stuck">Still stuck?</h2>
+<p>See <a href="support.html">Support</a> for how to get help and what information to include.</p>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="compatibility.html">Compatibility</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="accessibility.html" rel="prev"><span>Previous</span>Accessibility</a><a class="pager-next" href="faq.html" rel="next"><span>Next</span>FAQ</a></nav>
+</article>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#first-steps">First steps for any problem</a></li><li><a href="#install">Installation &amp; setup</a></li><li><a href="#display">Blocks on the site</a></li><li><a href="#interactive">Interactive blocks and scripts</a></li><li><a href="#data">Data and dynamic content</a></li><li><a href="#editor">In the editor</a></li><li><a href="#still-stuck">Still stuck?</a></li></ol></aside>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>

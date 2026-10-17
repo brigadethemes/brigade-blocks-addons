@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Design – Desktop, Tablet and Mobile Settings in Brigade Blocks – Brigade Blocks Addons</title>
+<meta name="description" content="How to make Brigade Blocks look great on every screen: breakpoints, per-device styling, responsive columns, stacking layouts, hiding blocks per device and testing.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/responsive.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Responsive Design – Desktop, Tablet and Mobile Settings in Brigade Blocks">
+<meta property="og:description" content="How to make Brigade Blocks look great on every screen: breakpoints, per-device styling, responsive columns, stacking layouts, hiding blocks per device and testing.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html" aria-current="page">Responsive Design</a></li><li><a href="advanced.html">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Responsive Design</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Design & features</p><h1>Responsive Design</h1>
+<p class="lead">Brigade blocks are responsive out of the box. When you want more control, almost every size, spacing and layout value can be set separately for desktop, tablet and mobile.</p>
+
+</header>
+
+<h2 id="breakpoints">Breakpoints</h2>
+<div class="table-wrap"><table><caption>Device sizes used by the plugin</caption><thead><tr><th scope="col">Device</th><th scope="col">Screen width</th><th scope="col">Inherits from</th></tr></thead><tbody>
+<tr><th scope="row">Desktop</th><td>1024px and wider (and the base for all sizes)</td><td>—</td></tr>
+<tr><th scope="row">Tablet</th><td>600px – 1023px</td><td>Desktop</td></tr>
+<tr><th scope="row">Mobile</th><td>599px and narrower</td><td>Tablet, then Desktop</td></tr>
+</tbody></table></div>
+<p>Values are inherited downwards: set something on Desktop and it applies everywhere, until you set a different value on Tablet or Mobile. Developers can change the breakpoints with the <code>wpbb_style_breakpoints</code> filter (see <a href="advanced.html#developer-hooks">Developer hooks</a>); the editor and the front end follow automatically.</p>
+
+<h2 id="three-ways">Three ways blocks adapt</h2>
+<ol class="steps">
+<li><strong>Automatically.</strong> Many blocks adapt on their own: Text Editor columns collapse on small screens, Tabs in vertical orientation move above the panel below 782px, alternating Timelines and Process Steps become one-column below 782px, Google Maps moves its info card below the map on phones, and charts shrink.</li>
+<li><strong>Block settings with device values.</strong> Blocks with grids have <em>Columns (desktop)</em>, <em>Columns (tablet)</em> and <em>Columns (mobile)</em> (Posts, Products, Gallery, Video Gallery, Product Categories, Statistics Cards). The Spacer has Desktop/Tablet/Mobile heights; Google Maps has a Mobile height.</li>
+<li><strong>The Styles tab Device picker.</strong> Choose <strong>Tablet</strong> or <strong>Mobile</strong> in the Style panel and change any device-aware value (see the “Per device” column in <a href="styling.html#panels">Styling Controls</a>).</li>
+</ol>
+
+<h2 id="per-device-styling">Styling per device, step by step</h2>
+<ol class="steps">
+<li>Select the block and open the <strong>Styles</strong> tab.</li>
+<li>In the Style panel, click <strong>Mobile</strong> (or Tablet). The editor preview switches to that size.</li>
+<li>Change the value — for example <strong>Spacing → Padding</strong> 24px or <strong>Typography → Font size</strong> 28px. The hint under the device buttons reminds you that empty values inherit larger screens.</li>
+<li>Switch back to <strong>Desktop</strong> to check that the desktop value is unchanged.</li>
+<li>Preview on a real phone before publishing.</li>
+</ol>
+
+<h2 id="recipes">Common recipes</h2>
+<details class="qa"><summary>Columns side by side on desktop, stacked on phones</summary><div><p>Use a <a href="blocks/container.html">Container</a> with the <em>Two columns</em> or <em>Three columns</em> layout — they are already set up this way. For your own layouts: Container → Styles → Device <strong>Mobile</strong> → <strong>Layout → Direction: Column</strong>.</p></div></details>
+<details class="qa"><summary>A grid of 3 → 2 → 1 columns</summary><div><p>Container → Styles → <strong>Layout type: Grid</strong>, Columns 3 on Desktop, 2 on Tablet, 1 on Mobile.</p></div></details>
+<details class="qa"><summary>Smaller headings on phones</summary><div><p>Heading → Styles → Element <strong>Title</strong> → Device <strong>Mobile</strong> → Typography → Font size.</p></div></details>
+<details class="qa"><summary>Less space around sections on phones</summary><div><p>Container → Styles → Device <strong>Mobile</strong> → Spacing → Padding. Or use the <a href="blocks/spacer.html">Spacer</a>’s Mobile height.</p></div></details>
+<details class="qa"><summary>Change the order on phones</summary><div><p>Select the block inside a Container → Styles → Device <strong>Mobile</strong> → <strong>Flex item → Order</strong>. Remember: screen readers still follow the editor order.</p></div></details>
+<details class="qa"><summary>Show a block only on phones (or only on desktop)</summary><div><p>Block → Styles → <strong>Visibility</strong> → switch off the devices where it should be hidden. In the editor, blocks hidden on the previewed device are faded, not removed, so you can still edit them.</p></div></details>
+
+<h2 id="hiding">Hiding content per device</h2>
+<p>The <strong>Visibility panel</strong> (every block with the panel) hides content by device with CSS; the content is still in the HTML.</p>
+<div class="callout warning"><p>Never rely on device hiding for private information — hidden content can still be read in the page source.</p></div>
+
+<h2 id="testing">Testing responsive layouts</h2>
+<ul>
+<li>Use the editor’s device preview (the Styles tab Device picker switches it for you, or use <em>Preview</em> in the top toolbar).</li>
+<li>Resize your browser window on the published page, or use your browser’s developer tools device mode.</li>
+<li>Always check at least one real phone — touch interactions (carousels, before/after sliders, flip boxes) behave differently from a mouse.</li>
+</ul>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="blocks/container.html">Container block</a></li><li><a href="blocks/spacer.html">Spacer block</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="styling.html" rel="prev"><span>Previous</span>Styling Controls</a><a class="pager-next" href="advanced.html" rel="next"><span>Next</span>Advanced Features</a></nav>
+</article>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#breakpoints">Breakpoints</a></li><li><a href="#three-ways">Three ways blocks adapt</a></li><li><a href="#per-device-styling">Styling per device, step by step</a></li><li><a href="#recipes">Common recipes</a></li><li><a href="#hiding">Hiding content per device</a></li><li><a href="#testing">Testing responsive layouts</a></li></ol></aside>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>

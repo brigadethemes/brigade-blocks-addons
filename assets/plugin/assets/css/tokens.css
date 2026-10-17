@@ -1,0 +1,174 @@
+/**
+ * Brigade Blocks — Donix design tokens.
+ *
+ * Source: Donix design system (Figma "dinox", Landing page). Every block reads these
+ * custom properties, so a theme can re-skin the whole plugin by overriding them, e.g.
+ *   :root { --wpbb-brand: #0a7cff; --wpbb-radius: 12px; }
+ *
+ * Only enqueued on pages that render a Brigade Blocks block.
+ */
+
+:root {
+
+	/* Color — neutral-forward with one warm accent. */
+	--wpbb-ink: #232439;          /* Headings, high-emphasis text. */
+	--wpbb-ink-alt: #2c2d45;      /* Dark panels, icons on accent-mint. */
+	--wpbb-body-text: #6d7174;    /* Body copy and descriptions. */
+	--wpbb-surface: #fff;         /* Page and card surface; label on brand. */
+	--wpbb-surface-tint: #f2f6f6; /* Section backgrounds — never text. */
+	--wpbb-brand: #f26440;        /* Primary actions only, one per view. */
+	--wpbb-brand-hover: #de5230;  /* Hover/active state of brand fills. */
+	--wpbb-brand-text: #c4451f;   /* Brand as small text on light surfaces (4.9:1 on white). */
+	--wpbb-brand-tint: #fdf3f3;   /* Behind brand-colored icons — never text. */
+	--wpbb-accent-mint: #c5ebe9;  /* Cool supporting accent for icon badges. */
+	--wpbb-border: #ebeced;       /* Card borders, dividers, input outlines. */
+	--wpbb-overlay: rgba(11, 18, 24, 0.6); /* Scrim over imagery. */
+	--wpbb-focus: #232439;        /* Focus ring (ink keeps 3:1 on every surface). */
+
+	/* Type — Urbanist carries everything; weight and size do the hierarchy. */
+	--wpbb-font-family: "Urbanist", -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+	--wpbb-display-lg: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+	--wpbb-display-md: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+	--wpbb-heading-md: 1.5rem;   /* 24 / 48 in Figma; tightened for multi-line headings. */
+	--wpbb-paragraph-lg: 1.125rem; /* 18 / 32 */
+	--wpbb-body: 1rem;            /* 16 / 24 */
+	--wpbb-small: 0.875rem;
+	--wpbb-weight-regular: 400;
+	--wpbb-weight-medium: 500;
+	--wpbb-weight-semibold: 600;
+	--wpbb-weight-bold: 700;
+
+	/* Spacing — button rhythm is the base unit. */
+	--wpbb-space-xs: 4px;
+	--wpbb-space-sm: 8px;
+	--wpbb-space-md: 16px;
+	--wpbb-space-lg: 24px;
+	--wpbb-space-xl: 32px;
+	--wpbb-space-2xl: 48px;
+
+	/* Radius — Donix uses one corner radius everywhere; badges are the only circles. */
+	--wpbb-radius: 6px;
+	--wpbb-radius-round: 999px;
+
+	/* Elevation & motion. */
+	--wpbb-shadow-card: 0 1px 2px rgba(35, 36, 57, 0.04), 0 8px 24px rgba(35, 36, 57, 0.06);
+	--wpbb-shadow-hover: 0 2px 4px rgba(35, 36, 57, 0.05), 0 16px 40px rgba(35, 36, 57, 0.1);
+	--wpbb-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+	--wpbb-duration: 200ms;
+
+	/*
+	 * Layout — defaults of the Container block, ready for a future global settings screen.
+	 * Container max width and content width follow the theme's wide/content sizes.
+	 */
+	--wpbb-container-width: var(--wp--style--global--wide-size, 1200px);
+	--wpbb-content-size: var(--wp--style--global--content-size, 760px);
+	--wpbb-container-gap: var(--wpbb-space-lg);
+	--wpbb-section-padding: clamp(48px, 6vw, 96px);
+}
+
+/* Shared primitives used by several blocks. */
+
+.wpbb-icon {
+	display: block;
+	flex-shrink: 0;
+}
+
+/*
+ * Icon badge — Donix IconBadge: a circular tinted swatch behind a line icon.
+ * Warm = brand icon on brand-tint; cool = ink-alt icon on accent-mint. Don't mix both in one row.
+ */
+.wpbb-badge {
+	--wpbb-badge-size: 56px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: var(--wpbb-badge-size);
+	height: var(--wpbb-badge-size);
+	border-radius: var(--wpbb-radius-round);
+	color: var(--wpbb-ink);
+	transition:
+		background-color var(--wpbb-duration) var(--wpbb-ease),
+		color var(--wpbb-duration) var(--wpbb-ease);
+}
+
+.wpbb-badge.is-style-plain {
+	width: auto;
+	height: auto;
+	border-radius: 0;
+	color: var(--wpbb-brand);
+}
+
+.wpbb-badge.is-style-warm {
+	background: var(--wpbb-brand-tint);
+	color: var(--wpbb-brand);
+}
+
+.wpbb-badge.is-style-cool {
+	background: var(--wpbb-accent-mint);
+	color: var(--wpbb-ink-alt);
+}
+
+.wpbb-badge.is-style-brand {
+	background: var(--wpbb-brand);
+	color: var(--wpbb-surface);
+}
+
+.wpbb-badge.is-style-dark {
+	background: var(--wpbb-ink);
+	color: var(--wpbb-surface);
+}
+
+.wpbb-badge.is-style-outline {
+	border: 1px solid var(--wpbb-border);
+	background: var(--wpbb-surface);
+	color: var(--wpbb-ink);
+}
+
+.wpbb-badge.is-shape-square {
+	border-radius: var(--wpbb-radius);
+}
+
+/*
+ * Style system: background overlay. The colour/opacity come from the block's generated
+ * rules; this sets up the layer. Children stay above it thanks to the isolated stack.
+ */
+.wpbb-has-overlay {
+	position: relative;
+	isolation: isolate;
+}
+
+.wpbb-has-overlay::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	border-radius: inherit;
+	pointer-events: none;
+}
+
+/* Style system: a block hidden on the device being previewed stays editable, just faded. */
+.wpbb-is-editor-hidden {
+	opacity: 0.4;
+	outline: 1px dashed var(--wpbb-body-text);
+	outline-offset: 2px;
+}
+
+.wpbb-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	:root {
+		--wpbb-duration: 0ms;
+	}
+}

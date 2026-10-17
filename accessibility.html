@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility – Building Inclusive Pages with Brigade Blocks – Brigade Blocks Addons</title>
+<meta name="description" content="The accessibility features built into Brigade Blocks Addons — keyboard support, screen-reader labels, focus indicators, reduced motion — and how to keep your pages accessible.">
+<link rel="canonical" href="https://brigadethemes.github.io/brigade-blocks-addons/accessibility.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Accessibility – Building Inclusive Pages with Brigade Blocks">
+<meta property="og:description" content="The accessibility features built into Brigade Blocks Addons — keyboard support, screen-reader labels, focus indicators, reduced motion — and how to keep your pages accessible.">
+<meta property="og:site_name" content="Brigade Blocks Addons Documentation">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/docs.css">
+<script>try{var t=localStorage.getItem('wpbb-docs-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><span class="visually-hidden">Menu</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+	<a class="brand" href="index.html" aria-label="Brigade Blocks Docs – home"><svg class="brand-mark" aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#f26440"/><path d="M9 9h7a4 4 0 0 1 0 8H9zM9 17h8a4 4 0 0 1 0 8H9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span class="brand-name">Brigade Blocks <span>Docs</span></span></a>
+	<div class="search" role="search">
+		<label class="visually-hidden" for="docs-search">Search the documentation</label>
+		<input id="docs-search" type="search" placeholder="Search docs…" autocomplete="off" aria-controls="docs-search-results" aria-expanded="false" role="combobox" aria-autocomplete="list">
+		<ul id="docs-search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+		<p class="visually-hidden" aria-live="polite" id="docs-search-status"></p>
+	</div>
+	<span class="version" title="Plugin version">v1.0.0</span>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Documentation">
+<div class="nav-section"><p class="nav-title">Start here</p><ul><li><a href="index.html">Documentation home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="installation.html">Installation &amp; Activation</a></li><li><a href="settings.html">Plugin Settings</a></li></ul></div><div class="nav-section"><p class="nav-title">Blocks</p><ul><li><a href="blocks/index.html">Blocks overview</a></li><li><details><summary><a href="blocks/index.html#module-content">Content</a></summary><ul><li><a href="blocks/container.html">Container</a></li><li><a href="blocks/heading.html">Heading</a></li><li><a href="blocks/text-editor.html">Text Editor</a></li><li><a href="blocks/image.html">Image</a></li><li><a href="blocks/image-box.html">Image Box</a></li><li><a href="blocks/icon.html">Icon</a></li><li><a href="blocks/icon-box.html">Icon Box</a></li><li><a href="blocks/button.html">Button</a></li><li><a href="blocks/divider.html">Divider</a></li><li><a href="blocks/spacer.html">Spacer</a></li><li><a href="blocks/video.html">Video</a></li><li><a href="blocks/google-maps.html">Google Maps</a></li><li><a href="blocks/html.html">HTML</a></li><li><a href="blocks/shortcode.html">Shortcode</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-interactive">Interactive</a></summary><ul><li><a href="blocks/accordion.html">Accordion</a></li><li><a href="blocks/accordion-item.html">Accordion Item</a></li><li><a href="blocks/tabs.html">Tabs</a></li><li><a href="blocks/tab.html">Tab</a></li><li><a href="blocks/slider.html">Slider</a></li><li><a href="blocks/slide.html">Slide</a></li><li><a href="blocks/toggle.html">Content Toggle</a></li><li><a href="blocks/toggle-panel.html">Toggle Panel</a></li><li><a href="blocks/timeline.html">Timeline</a></li><li><a href="blocks/timeline-item.html">Timeline Item</a></li><li><a href="blocks/process-steps.html">Process Steps</a></li><li><a href="blocks/process-step.html">Process Step</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-marketing">Marketing</a></summary><ul><li><a href="blocks/call-to-action.html">Call to Action</a></li><li><a href="blocks/counter.html">Counter</a></li><li><a href="blocks/flip-box.html">Flip Box</a></li><li><a href="blocks/progress-bar.html">Progress Bar</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-posts">Posts</a></summary><ul><li><a href="blocks/posts.html">Posts</a></li><li><a href="blocks/author-box.html">Author Box</a></li><li><a href="blocks/dynamic-content.html">Dynamic Content</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-media">Media</a></summary><ul><li><a href="blocks/gallery.html">Gallery</a></li><li><a href="blocks/before-after.html">Before / After</a></li><li><a href="blocks/video-gallery.html">Video Gallery</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-woocommerce">WooCommerce</a></summary><ul><li><a href="blocks/products.html">Products</a></li><li><a href="blocks/product-categories.html">Product Categories</a></li><li><a href="blocks/add-to-cart.html">Add to Cart</a></li><li><a href="blocks/mini-cart.html">Mini Cart</a></li><li><a href="blocks/product-search.html">Product Search</a></li><li><a href="blocks/store-page.html">Store Page</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-forms">Forms</a></summary><ul><li><a href="blocks/form-styler.html">Form Styler</a></li><li><a href="blocks/login-form.html">Login Form</a></li><li><a href="blocks/user-profile.html">User Profile</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-advanced">Advanced</a></summary><ul><li><a href="blocks/advanced-search.html">Advanced Search</a></li><li><a href="blocks/taxonomy-filter.html">Taxonomy Filter</a></li></ul></details></li><li><details><summary><a href="blocks/index.html#module-data-visualization">Data Visualization</a></summary><ul><li><a href="blocks/chart.html">Chart</a></li><li><a href="blocks/progress-chart.html">Progress Chart</a></li><li><a href="blocks/stat-cards.html">Statistics Cards</a></li></ul></details></li></ul></div><div class="nav-section"><p class="nav-title">Design &amp; features</p><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="responsive.html">Responsive Design</a></li><li><a href="advanced.html">Advanced Features</a></li></ul></div><div class="nav-section"><p class="nav-title">Good to know</p><ul><li><a href="compatibility.html">Compatibility</a></li><li><a href="performance.html">Performance &amp; Best Practices</a></li><li><a href="accessibility.html" aria-current="page">Accessibility</a></li></ul></div><div class="nav-section"><p class="nav-title">Help</p><ul><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+</nav>
+<main id="main" tabindex="-1">
+<article class="doc">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Docs</a></li><li aria-current="page">Accessibility</li></ol></nav>
+<header class="doc-header">
+<p class="eyebrow">Good to know</p><h1>Accessibility</h1>
+<p class="lead">Brigade blocks are built to work for everyone: with a keyboard, with a screen reader and for visitors who prefer less motion. A few habits on your side complete the picture.</p>
+
+</header>
+
+<h2 id="built-in">Built-in accessibility</h2>
+<ul>
+<li><strong>Keyboard support everywhere.</strong> Accordions, tabs (arrow keys, Home, End), content toggles, carousels, the before/after slider, lightboxes, the mini cart drawer and live search results all work without a mouse.</li>
+<li><strong>Standard patterns.</strong> Tabs follow the WAI-ARIA tabs pattern; accordions use native <code>&lt;details&gt;</code>; lightboxes and the cart drawer are modal dialogs that keep focus inside, close with <kbd>Esc</kbd> and return focus to where you were.</li>
+<li><strong>Screen-reader text.</strong> Counters and statistics are read once as their final value; charts include a hidden data table; progress bars and rings are announced with their values; icon-only buttons have labels; links that open a new tab say so.</li>
+<li><strong>Visible focus.</strong> Interactive parts have a clear focus ring, which you can restyle in the Focus state (<a href="styling.html#panel-border">Focus indicator</a>).</li>
+<li><strong>Reduced motion.</strong> Count-ups, chart and progress animations, carousel autoplay and flip effects are reduced or skipped for visitors who ask their device for less motion.</li>
+<li><strong>Colour contrast.</strong> The built-in Donix colour combinations meet WCAG AA contrast.</li>
+<li><strong>Decorative graphics are hidden</strong> from assistive technology (icons, separators, markers).</li>
+</ul>
+
+<h2 id="your-part">Your part: a checklist</h2>
+<ul>
+<li><strong>Alternative text:</strong> describe meaningful images (Image, Image Box, Gallery, Before / After). Leave it empty only for decorative images.</li>
+<li><strong>Headings in order:</strong> one H1 per page, then H2, H3… Use the <em>Title tag</em> / heading level settings to keep the order; change the visual size separately.</li>
+<li><strong>Meaningful link text:</strong> “Download the brochure” rather than “Click here”. Give linked icons an <em>Accessible label</em>.</li>
+<li><strong>Contrast:</strong> when you change colours in the Styles tab, keep at least 4.5 : 1 for normal text and 3 : 1 for large text. Add an overlay to images behind text.</li>
+<li><strong>Don’t rely on colour alone</strong> to convey meaning.</li>
+<li><strong>Keep the focus ring visible</strong> — if you restyle it, make it at least 2px and clearly different from the background.</li>
+<li><strong>Visual order = reading order:</strong> avoid “Reverse” directions and Flex item <em>Order</em> for important content.</li>
+<li><strong>Motion:</strong> avoid autoplay for carousels and videos with important content; keep video controls on.</li>
+<li><strong>Accessible titles</strong> for videos and maps; captions inside your videos.</li>
+<li><strong>Test</strong> your pages with only the keyboard (Tab, Shift+Tab, Enter, Space, arrows).</li>
+</ul>
+<p>Each block guide has an <em>Accessibility</em> section with block-specific details.</p>
+
+<aside class="related" aria-labelledby="related-title"><h2 id="related-title" class="related-title">Related documentation</h2><ul><li><a href="styling.html">Styling Controls</a></li><li><a href="performance.html">Performance</a></li><li><a href="faq.html">FAQ</a></li></ul></aside>
+<nav class="pager" aria-label="Previous and next"><a class="pager-prev" href="performance.html" rel="prev"><span>Previous</span>Performance</a><a class="pager-next" href="troubleshooting.html" rel="next"><span>Next</span>Troubleshooting</a></nav>
+</article>
+</main>
+<div class="toc-spacer"></div>
+</div>
+<footer class="site-footer">
+<p>Brigade Blocks Addons 1.0.0 documentation · by Brigade Themes · Plugin and documentation licensed under GPLv2 or later.</p>
+<p><a href="https://wordpress.org/plugins/brigade-blocks-addons/">Plugin page on WordPress.org</a> · <a href="https://wordpress.org/support/plugin/brigade-blocks-addons/">Support forum</a> · <a href="changelog.html">Changelog</a></p>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/docs.js"></script>
+</body>
+</html>
